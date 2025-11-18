@@ -1,0 +1,93 @@
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+
+:root {
+    --main-color: #1F4FA8;
+    --accent-color: #F9C647;
+    --bg-dark: #13131a;
+}
+
+
+.main-bg {
+    background-color: #4C160F !important;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: #252525 !important;
+    font-weight: 500;
+    border: none;
+    transition: letter-spacing 0.2s;
+}
+.btn-accent:hover {
+    letter-spacing: 0.05em;
+    filter: brightness(1.07);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+}
+
+.navbar .nav-link.active, .navbar .nav-link:hover {
+    color: var(--accent-color) !important;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 2.6rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.title span {
+    color: #E53935;
+}
+
+
+.home-section {
+    min-height: 70vh;
+    background: url("./imgs/background.jpeg") center/cover no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(15,15,15,0.45);
+}
+
+
+.card {
+    background: #181820;
+    color: #fff;
+    border-radius: 1.2rem;
+}
+
+
+.card-img-top {
+    object-fit: cover;
+    height: 210px;
+}
+
+
+.footer img {
+    transition: transform 0.2s;
+    padding: 0.5rem;
+}
+.footer img:hover {
+    transform: scale(1.13);
+    background: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+    .home-section {
+        min-height: 40vh;
+        padding-bottom: 3rem;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .card-img-top {
+        height: 160px;
+    }
+}
