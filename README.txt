@@ -28,6 +28,9 @@ Este projeto é um sistema completo de gestão e pedidos de hambúrgueres, desen
 
 2. Importar o ficheiro SQL localizado na raiz:
    -> banco_de_dados.sql
+Este ficheiro já inclui todos os dados (inserts) de teste.
+Ou seja, ao importar, o professor terá logo os hambúrgueres no menu, os pedidos e as contas de utilizador (Admin e Aluno) prontas a usar,
+sem ter de criar nada manualmente.
 
 3. Colocar a pasta do projeto dentro do diretório 'www' ou 'htdocs'.
 
@@ -52,4 +55,5 @@ CLIENTE DE TESTE:
 Marcello Portugal
 ISCAC - Coimbra Business School
 2025/2026
+
 ==========================================================
