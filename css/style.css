@@ -1,0 +1,143 @@
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+:root {
+    --main-color: #1F4FA8;
+    --accent-color: #F9C647;
+    --bg-dark: #13131a;
+    --danger-red: #E53935;
+    --hover-red: #b71c1c;
+}
+
+.main-bg {
+    background-color: #4C160F !important;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+/* --- BOTÕES ACCENT (HOME) --- */
+.btn-accent {
+    background-color: var(--accent-color);
+    color: #252525 !important;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    letter-spacing: 0.05em;
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 198, 71, 0.4);
+}
+
+/* --- MOVIMENTO DOS BOTÕES (MENU E SOBRE NÓS) --- */
+html body .btn-danger.btn-menu-add {
+    background-color: var(--danger-red) !important;
+    border: none !important;
+    display: inline-block !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    position: relative !important;
+    transform: translateY(0);
+}
+
+html body .btn-danger.btn-menu-add:hover {
+    background-color: var(--hover-red) !important;
+    transform: translateY(-10px) !important; /* O salto de 10px */
+    box-shadow: 0 10px 20px rgba(229, 57, 53, 0.5) !important;
+    filter: brightness(1.2) !important;
+}
+
+/* --- NAVBAR --- */
+.navbar .nav-link.active, 
+.navbar .nav-link:hover {
+    color: var(--accent-color) !important;
+    font-weight: bold;
+}
+
+.navbar .position-relative {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.navbar .position-relative:hover img {
+    filter: invert(82%) sepia(51%) saturate(548%) hue-rotate(345deg) brightness(101%) contrast(96%);
+}
+
+.navbar .position-relative:hover {
+    transform: scale(1.1);
+}
+
+/* --- TÍTULOS E ESTRUTURA --- */
+.title {
+    font-size: 2.6rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.title span {
+    color: var(--danger-red);
+}
+
+.home-section {
+    min-height: 70vh;
+    background: url("../imgs/background.jpeg") center/cover no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(15,15,15,0.45);
+}
+
+/* --- CARDS E IMAGENS --- */
+.card {
+    background: #181820;
+    color: #fff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 210px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+/* --- CORREÇÃO TEXTO SOBRE NÓS --- */
+section.container.py-5 .text-white {
+    color: #ffffff !important;
+}
+
+/* --- FOOTER --- */
+.footer img {
+    transition: transform 0.2s;
+    padding: 0.5rem;
+}
+
+.footer img:hover {
+    transform: scale(1.13);
+    background: var(--accent-color);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+    .home-section {
+        min-height: 40vh;
+        padding-bottom: 3rem;
+    }
+    .card-img-top {
+        height: 160px;
+    }
+}
