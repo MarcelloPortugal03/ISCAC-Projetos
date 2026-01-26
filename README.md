@@ -1,7 +1,3 @@
-==========================================================
-        ISCAC BURGUER - GESTÃO E PEDIDOS ONLINE
-==========================================================
-
 Este projeto é um sistema completo de gestão e pedidos de hambúrgueres, desenvolvido para o campus do ISCAC.
 
 --- 1. ESTRUTURA DE PASTAS ---
@@ -41,8 +37,9 @@ CLIENTE DE TESTE:
 - Email: aluno@iscac.pt
 - Senha: aluno123
 
---- 5. DESENVOLVIDO POR ---
+ 5. DESENVOLVIDO POR 
 Marcello Portugal
 ISCAC - Coimbra Business School
 2025/2026
+
 ==========================================================
